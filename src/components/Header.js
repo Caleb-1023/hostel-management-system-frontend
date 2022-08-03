@@ -1,0 +1,27 @@
+import React from 'react';
+import {Link} from "react-router-dom";
+
+const Header = ({title}) => {
+	return (
+
+		<div className="header border-bottom bg-dark py-2" style={{paddingLeft: '250px'}}>
+			<div className="header-content">
+				<nav className="navbar navbar-expand">
+					<div className="collapse navbar-collapse justify-content-between">
+						<div className="header-left d-flex justify-content-between w-100 pe-5">
+							<div className="dashboard_bar text-white fs-4 fw-bold">
+								{title}
+							</div>
+							<div className="dashboard_bar text-white fs-4 fw-bold">
+								<img src="" alt="profile" />
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+		</div>
+
+	);
+};
+
+export default Header;
