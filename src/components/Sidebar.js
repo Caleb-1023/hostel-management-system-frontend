@@ -1,7 +1,9 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 const Sidebar = () => {
+    const navigate = useNavigate()
+
   return (
     <div className='position-fixed p-4 bg-dark' style={{minHeight: '100vh'}}>
         <i class='text-white fs-1 mx-3 mb-4 bx bxs-graduation' ></i>
@@ -18,7 +20,7 @@ const Sidebar = () => {
         </ul>
         <ul className='position-fixed bottom-0 ps-2'>
             <li className='mb-4'>
-                <Link className='text-white fs-5' to='/'><i className='mx-2 fs-3 bx bx-log-out'></i> Sign Out</Link>
+                <Link className='text-white fs-5' onClick={() => navigate('/')} to='/'><i className='mx-2 fs-3 bx bx-log-out'></i> Sign Out</Link>
             </li>
         </ul>
     </div>
