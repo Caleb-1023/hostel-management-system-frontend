@@ -7,13 +7,13 @@ const Sidebar = () => {
         <i class='text-white fs-1 mx-3 mb-4 bx bxs-graduation' ></i>
         <ul className='ps-2 mt-4'>
             <li className='mb-4'>
-                <Link className='text-white fs-5' to='/'><i className='mx-2 fs-3 bx bxs-dashboard'></i> Dashboard</Link>
+                <Link className='text-white fs-5' to='/dashboard'><i className='mx-2 fs-3 bx bxs-dashboard'></i> Dashboard</Link>
             </li>
             <li className='mb-4'>
-                <Link className='text-white fs-5' to='/'><i className='mx-2 fs-3 bx bxs-home-alt-2'></i> Management</Link>
+                <Link className='text-white fs-5' to='/management'><i className='mx-2 fs-3 bx bxs-home-alt-2'></i> Management</Link>
             </li>
             <li className='mb-4'>
-                <Link className='text-white fs-5' to='/'><i className='mx-2 fs-3 bx bxs-report'></i> Report</Link>
+                <Link className='text-white fs-5' to='/report'><i className='mx-2 fs-3 bx bxs-report'></i> Report</Link>
             </li>
         </ul>
         <ul className='position-fixed bottom-0 ps-2'>

@@ -1,13 +1,17 @@
 import { Routes, Route } from "react-router-dom";
-import Layout from "./components/Layout";
+import Sidebar from "./components/Sidebar";
+import Dashboard from "./pages/Dashboard"
+import Management from "./pages/Management"
+import Report from "./pages/Report"
 
 function App() {
   return (
     <>
+    <Sidebar />
     <Routes>
-      <Route index path="/" element={<Layout />}>
-        
-      </Route>
+      <Route index path='/dashboard' element={<Dashboard />} />
+      <Route path='/management' element={<Management />} />
+      <Route path='/report' element={<Dashboard />} />
     </Routes>
     </>
   );
