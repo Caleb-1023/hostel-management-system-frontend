@@ -8,7 +8,18 @@ const Login = () => {
 
   return (
     <div className='container'>
-        {signUp ? (<>Hello</>):(<>World</>)}
+        {/* Write general code around this code block */}
+        {signUp ? (
+        <>
+        {/* Write code specific to signup page here */}
+        Hello
+        </>
+        ):(
+        <>
+        {/* Write code specific to login page here */}
+        World
+        </>
+        )}
         <button onClick={() => {setSignUp(!signUp)}}>Sign up</button>
         <button onClick={() => navigate('/dashboard')}>Log in</button>
     </div>
