@@ -1,4 +1,5 @@
-import { Routes, Route } from "react-router-dom";
+import {Routes, Route } from "react-router-dom";
+import React from "react";
 // import Sidebar from "./components/Sidebar";
 import Dashboard from "./pages/Dashboard"
 import Management from "./pages/Management"
@@ -15,7 +16,7 @@ function App() {
       <Route path='/management' element={<Management />} />
       <Route path='/report' element={<Report />} />
     </Routes>
-    </>
+   </>
   );
 }
 
