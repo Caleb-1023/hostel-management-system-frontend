@@ -1,10 +1,11 @@
 import React from 'react'
+import DashboardContent from '../content/DashboardContent'
 
-const DashboardContent = () => {
-  return (
+const StudentDashboard= ()=>{
+return (
     <div className='container-fluid' style={{paddingLeft: '250px'}}>
         <div className="DashboardContent">
-            <div className="Greetings">
+            <div className="Profile">
               <h2>Good Morning ☀</h2>
               <img src="" alt="userimage"/>
               {/* (<p>GBENGA, Lagbaja</p> }
@@ -14,20 +15,19 @@ const DashboardContent = () => {
               <p>Cyber Security</p>
               {<p>500 Level</p>) */}
             </div>
-            <div className="first">
+            <div className="l-tab">
               <h3>Current Room</h3>
               <span className="image"><img src="" alt="student's room"></img></span>
               <p>Hall:</p>
-              {/* (<p>Wing:</p> }
+              <p>Wing:</p> 
               <p>Floor:</p>
-              {/<p>Room number:</p>) */}
+              <p>Room number:</p>
             </div>
-            <div className="second">
+            <div className="r-tab">
               <h3>Registered Devices</h3>
             </div>
         </div>
     </div>
   )
 }
-
-export default DashboardContent
+export default StudentDashboard;
