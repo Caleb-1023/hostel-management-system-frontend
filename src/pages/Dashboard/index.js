@@ -8,7 +8,6 @@ const Dashboard = () => {
     <div>
         <Sidebar />
         <Header title='Dashboard'/>
-        {/* <DashboardContent /> */}
         <Officer/>
     </div>
   )

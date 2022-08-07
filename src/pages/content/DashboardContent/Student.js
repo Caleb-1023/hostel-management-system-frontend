@@ -8,12 +8,12 @@ return (
             <div className="Profile">
               <h2>Good Morning ☀</h2>
               <img src="" alt="userimage"/>
-              {/* (<p>GBENGA, Lagbaja</p> }
+              <p>GBENGA, Lagbaja</p> 
               <p>lagbe@stu.edu.com</p>
               <p>22ABCD001</p>
               <p>College of Technology</p>
               <p>Cyber Security</p>
-              {<p>500 Level</p>) */}
+              <p>500 Level</p>
             </div>
             <div className="l-tab">
               <h3>Current Room</h3>
