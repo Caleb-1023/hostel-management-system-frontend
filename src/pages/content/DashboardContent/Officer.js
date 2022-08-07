@@ -1,7 +1,7 @@
 import React from 'react'
-import DashboardContent from '../content/DashboardContent'
 
-const Officer= ()=>
+
+const Officer=()=>
 {
     return(
       
@@ -16,7 +16,7 @@ const Officer= ()=>
                     </div>
                     <div className="l-tab">
                       <h3>Current Room</h3>
-                      <span className="image"><img src="" alt="student's room"></img></span>
+                      <span className="image"><img src="" alt="hall image"></img></span>
                       <p>Hall:</p>
                     </div>
                     <div className="r-tab">
