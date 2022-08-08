@@ -1,4 +1,22 @@
 .r-tab{
 display: flex;
-justify-items: flex-end;
+justify-content: flex-end;
+}
+.profile, .l-tab, .r-tab{
+    background-color:#e254ff;
+    width: calc(80%+2px);
+    border-radius: 25px;
+    }
+.l-tab, .r-tab{
+    background-color: #e99a40;
+    width: fit-content;
+}
+.end{
+    text-align: end;
+}
+.wkday{
+    display:inline-flex;
+    list-style: none;
+    padding: 7px;
+    font-weight: bolder;
 }
