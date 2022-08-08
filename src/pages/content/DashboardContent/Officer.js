@@ -1,4 +1,5 @@
 import React from 'react'
+import './style-dashboard';
 
 
 const Officer=()=>
@@ -6,21 +7,26 @@ const Officer=()=>
     return(
       
             <div className='container-fluid' style={{paddingLeft: '250px'}}>
-                <div className="DashboardContent">
-                    <div className="Profile">
+                <div className="container DashboardContent">
+                    <div className="row align-items-start col Profile" style={{margin:'3em'}}>
                       <h2>Good Morning ☀</h2>
-                      <img src="" alt="userimage"/>
+                      <img className="image "src="" alt="userimage" height={'90'} width={'90'}/>
                        <p>Mr Jack, Sparrow</p>
                       <p>davyjones@.edu.com</p>
                       <p>08002345678</p>
+                      <p>Male Residency</p>
+                      <p>Hall officer</p>
                     </div>
-                    <div className="l-tab">
-                      <h3>Current Room</h3>
-                      <span className="image"><img src="" alt="hall image"></img></span>
+                    <div className="row align-items-end col l-tab" style={{margin:'3em'}}>
+                      <h3>Current Post</h3>
+                      <span className="image"><img src="" alt="hall"></img></span>
                       <p>Hall:</p>
                     </div>
-                    <div className="r-tab">
-                      <h3>Registered Devices</h3>
+                    <div className="row align-items-end r-tab" style={{margin:'3em'}}>
+                      <h3>Schedule 📅</h3>
+                      <div>
+
+                      </div>
                     </div>
                 </div>
             </div>
