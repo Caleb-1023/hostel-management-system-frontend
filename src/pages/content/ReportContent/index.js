@@ -7,7 +7,7 @@ const ReportContent = () => {
         <div className="card bg-light p-3 mt-3 mb-5 h-100 mx-4">
             <h4 className='text-center fs-3 fw-bold'>Maintenance Form</h4>
             {/* <!-- Button trigger modal --> */}
-            <button type="button" class="btn btn-primary btn-sm col-1 rounded-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <button type="button" class="btn btn-primary btn-sm mb-4 col-1 rounded-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
               New Report
             </button>
 

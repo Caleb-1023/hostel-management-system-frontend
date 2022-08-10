@@ -1,4 +1,5 @@
 import React from 'react'
+import Status from '../../../components/Status'
 
 const ReportTable = () => {
   const reports = [
@@ -11,174 +12,6 @@ const ReportTable = () => {
     },
     {
       title: "Broken wardrobe",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
-      roomNo: "A302",
-      dateSubmitted: new Date().toDateString(),
-      status: "Active",
-      dateResolved: new Date().toDateString()
-    },
-    {
-      title: "Bad socket",
       roomNo: "A302",
       dateSubmitted: new Date().toDateString(),
       status: "Active",
@@ -262,7 +95,7 @@ const ReportTable = () => {
                   <td>{report.title}</td>
                   <td>{report.roomNo}</td>
                   <td>{report.dateSubmitted}</td>
-                  <td>{report.status}</td>
+                  <td><Status status='success' text='Done' /></td>
                   <td>{report.dateResolved}</td>
                 </tr>
             })}
