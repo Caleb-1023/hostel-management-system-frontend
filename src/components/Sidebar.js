@@ -5,7 +5,7 @@ const Sidebar = () => {
     const navigate = useNavigate()
 
   return (
-    <div className='position-fixed p-4 bg-dark' style={{minHeight: '100vh'}}>
+    <div className='position-fixed p-4 bg-dark' style={{minHeight: '100vh', zIndex: '20'}}>
         <i class='text-white fs-1 mx-3 mb-4 bx bxs-graduation' ></i>
         <ul className='ps-2 mt-4'>
             <li className='mb-4'>

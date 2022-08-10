@@ -5,7 +5,7 @@ import ReportContent from '../content/ReportContent'
 
 const Report = () => {
   return (
-    <div>
+    <div className=''>
         <Sidebar />
         <Header title='Report'/>
         <ReportContent />
@@ -13,4 +13,4 @@ const Report = () => {
   )
 }
 
-export default Report
+export default Report 

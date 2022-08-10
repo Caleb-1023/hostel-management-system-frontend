@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 const Header = ({title}) => {
 	return (
 
-		<div className="header border-bottom bg-dark py-2" style={{paddingLeft: '250px'}}>
+		<div className="header position-sticky top-0 start-0 bg-dark py-2" style={{paddingLeft: '250px',zIndex:'10'}}>
 			<div className="header-content">
 				<nav className="navbar navbar-expand">
 					<div className="collapse navbar-collapse justify-content-between">
