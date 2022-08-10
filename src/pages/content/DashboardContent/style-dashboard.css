@@ -8,15 +8,24 @@ justify-content: flex-end;
     border-radius: 25px;
     }
 .l-tab, .r-tab{
-    background-color: #e99a40;
+    background-color:#e254ff;
     width: fit-content;
 }
 .end{
     text-align: end;
 }
-.wkday{
+.wkday > li{
     display:inline-flex;
     list-style: none;
     padding: 7px;
     font-weight: bolder;
 }
+.push{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(7, 1fr);
+}
+/* .bg-date{
+    background-color: purple;
+    width: 50px;
+} */
