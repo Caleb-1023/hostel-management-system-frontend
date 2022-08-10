@@ -2,13 +2,17 @@
 display: flex;
 justify-content: flex-end;
 }
+.sun{
+    width: 70px;
+    height: 70px;
+}
 .profile, .l-tab, .r-tab{
-    background-color:#e254ff;
+    background-color:#d9bfdf;
     width: calc(80%+2px);
     border-radius: 25px;
     }
 .l-tab, .r-tab{
-    background-color:#e254ff;
+    background-color:#d9bfdf;
     width: fit-content;
 }
 .end{
@@ -25,7 +29,14 @@ justify-content: flex-end;
     text-align: center;
     grid-template-columns: repeat(7, 1fr);
 }
-/* .bg-date{
-    background-color: purple;
-    width: 50px;
+.section{
+    display: inline-flex;
+}
+/* .on-tag{
+    background:#ac56ac;
+    border-radius: 10px;
+    width: 30px;
+    height: 30px;
+    margin: 10px;
+    padding:1px 3px;
 } */
