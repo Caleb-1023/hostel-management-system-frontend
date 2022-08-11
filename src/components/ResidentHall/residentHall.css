@@ -1,3 +1,39 @@
-.resident {
+.resident-body {
   position: absolute;
+  background-color: white;
+  width: 70%;
+  height: 80%;
+  margin: 80px 0 0 80px;
+  display: grid;
+  border-radius: 25px;
+}
+
+.title {
+  font-weight: bold;
+  font-size: 3rem;
+  place-items: center;
+  margin-left: 40%;
+  margin-top: 10px;
+}
+
+.resident-img {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.resident-image {
+  width: 32%;
+}
+
+.btn {
+  font-weight: bold;
+  font-size: 2rem;
+  place-items: center;
+  margin-left: 45%;
+  margin-top: 10px;
+  border-radius: 20px;
+  background-color: #301934;
+  color: white;
+  padding: 3px 70px 3px 70px;
 }
