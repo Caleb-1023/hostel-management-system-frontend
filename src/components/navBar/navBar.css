@@ -1,0 +1,43 @@
+.navbar {
+  background-color: white;
+  height: 100vh;
+  width: 320px;
+}
+
+.navbar-container {
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: 10px;
+}
+
+.nav-content {
+  display: flex;
+  align-items: center;
+  margin: 0 10px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-content:hover {
+  color: grey;
+  transition: 0.8s;
+}
+
+.nav-content div {
+  font-weight: bold;
+  font-size: 2rem;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 5px;
+  background-color: #301934;
+}
+
+.navbar-words {
+  padding: 5px;
+}

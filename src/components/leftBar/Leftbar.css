@@ -1,0 +1,24 @@
+.leftbar {
+  background-color: white;
+  height: 100%;
+  width: 400px;
+  position: absolute;
+  right: 0;
+}
+
+.leftbar-container {
+  margin: 70px 0 0 50px;
+}
+
+.leftbar-container div {
+  font-size: 20px;
+}
+
+.cal-div {
+  margin: 70px 0 0 50px;
+  font-size: 20px;
+}
+
+.leftbar-container ul li {
+  list-style-type: circle;
+}

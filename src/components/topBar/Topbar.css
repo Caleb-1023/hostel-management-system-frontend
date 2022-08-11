@@ -1,0 +1,27 @@
+.topbar {
+  background-color: #301934;
+  height: 120px;
+  width: 100vw;
+}
+
+.topbar-container {
+  display: flex;
+  margin-left: 50px;
+  right: 0;
+  justify-content: space-between;
+}
+
+.topbar-container img {
+  margin: 30px 300px 0px 0px;
+}
+
+.topbar-name {
+  color: white;
+  font-weight: 700;
+  font-size: 36px;
+  margin-top: 30px;
+}
+
+.sign-out {
+  margin-bottom: 30px;
+}
