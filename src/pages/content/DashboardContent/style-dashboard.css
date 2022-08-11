@@ -2,13 +2,18 @@
 display: flex;
 justify-content: flex-end;
 }
+.time{
+    font-size:1.3rem;
+}
+.sz{
+    font-size: 1em;
+}
 .sun{
     width: 70px;
     height: 70px;
 }
 .profile, .l-tab, .r-tab{
     background-color:#d9bfdf;
-    width: calc(80%+2px);
     border-radius: 25px;
     }
 .l-tab, .r-tab{
@@ -17,6 +22,7 @@ justify-content: flex-end;
 }
 .end{
     text-align: end;
+    margin:auto 1.2em;
 }
 .wkday > li{
     display:inline-flex;
@@ -24,19 +30,42 @@ justify-content: flex-end;
     padding: 7px;
     font-weight: bolder;
 }
+table>.push{
+    display:grid;
+    justify-content: center;
+}
 .push{
     display: grid;
     text-align: center;
-    grid-template-columns: repeat(7, 1fr);
+    justify-content: center;
+    grid-template-columns: repeat(7, 3em);
 }
 .section{
     display: inline-flex;
+    margin: 30px;
 }
-/* .on-tag{
+.section~.r-tab{
+    justify-content: flex-end;
+}
+.i{color: #ac56ac;} .j{color: #e7dbdb;}
+
+.on-tag{
     background:#ac56ac;
-    border-radius: 10px;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
     width: 30px;
     height: 30px;
-    margin: 10px;
-    padding:1px 3px;
-} */
+    margin: 3px;
+    padding:1px 0;
+}
+.off-tag{
+    background:#e7dbdb;
+    border-radius: 5px;
+    text-align: center;
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    margin: 3px;
+    padding:1px 0;
+}
