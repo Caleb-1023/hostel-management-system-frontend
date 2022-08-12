@@ -1,7 +1,8 @@
 import React from 'react'
 import Header from '../../components/Header';
 import Sidebar from '../../components/Sidebar';
-import StudentDashboard from '../content/DashboardContent/Student.js';
+// import Officer from '../content/DashboardContent/Officer';
+// import StudentDashboard from '../content/DashboardContent/Student.js';
 import DashboardContent from '../content/DashboardContent';
 
 const Dashboard = () => {
@@ -9,8 +10,8 @@ const Dashboard = () => {
     <div>
         <Sidebar />
         <Header title='Dashboard'/>
-        {/* <Officer/> */}
-        <StudentDashboard/>
+        {/* <Officer/>
+        <StudentDashboard/> */}
         <DashboardContent/>
 
     </div>

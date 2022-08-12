@@ -41,14 +41,31 @@ table>.push{
     grid-template-columns: repeat(7, 3em);
 }
 .section{
-    display: inline-flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     margin: 30px;
+}
+.l-tab{
+    width: fit-content;
 }
 .section~.r-tab{
     justify-content: flex-end;
 }
-.i{color: #ac56ac;} .j{color: #e7dbdb;}
-
+.i{color: #ac56ac;} .j{color: #e7dbdb;} .j-in{text-align: start;}
+.button{
+    background-color:#491142;
+    color: #ffffff;
+    margin:auto 70px;
+    border: 0px solid #491142;
+    border-radius: 5px;
+    width: fit-content;
+}
+.g-2{
+    display: grid;
+    grid-template-columns: repeat(2,50px);
+    justify-content: space-evenly;
+    gap:1em;
+}
 .on-tag{
     background:#ac56ac;
     border-radius: 5px;
