@@ -30,3 +30,34 @@ body {
 .img {
     padding: 13rem 6rem 0 6rem;
 }
+
+@media screen and (max-width:600px) {
+    .Card__right {
+        display: none;
+    }
+
+    .Card {
+        background: #b0e0e6;
+        padding-right: 3rem;
+    }
+
+    .p {
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .img {
+        padding: 16rem 3rem 0 3rem;
+    }
+
+    .form {
+        margin-right: 2rem;
+    }
+
+    .p {
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+}
