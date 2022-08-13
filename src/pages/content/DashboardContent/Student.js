@@ -1,6 +1,5 @@
 import React from 'react';
 import './style-dashboard.css';
-
 const StudentDashboard= ()=>{
 return (
   <div className='container-fluid' style={{paddingLeft: '250px'}}>

@@ -77,7 +77,7 @@ const ReportTable = () => {
 
   return (
     <div className='container overflow-scroll'>
-        <table class="table my-3">
+        <table className="table my-3">
           <thead>
             <tr>
               <th className='fs-5' scope="col"></th>
