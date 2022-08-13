@@ -1,12 +1,12 @@
 import React from "react";
-import StudentDashboard from "./Student";
+// import StudentDashboard from "./Student";
 import Officer from "./Officer";
 
 const DashboardContent= ()=>{
     return(
     <>
     <Officer/>
-    <StudentDashboard/>
+    {/* <StudentDashboard/> */}
     </>);
 }
 export default DashboardContent;
