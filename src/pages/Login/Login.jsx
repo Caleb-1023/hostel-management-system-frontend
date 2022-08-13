@@ -33,7 +33,7 @@ const SetUp = () => {
         <div className={styles.form}>
             <div className='container  mt-5 mx-5' >
                 <FormHeader title="Login" />
-                <form className='mt-5 form' onSubmit={handleSubmit}>
+                <form action='https://test-hms.herokuapp.com/api/auth/signin' className='mt-5 form' onSubmit={handleSubmit}>
                     <div className='mb-4'>
                         <label htmlFor="name" className='form-label'>Username*</label>
                         <input type="text" name="name" id="name" className='form-control rounded-5 w-75' onChange={handleChange} />

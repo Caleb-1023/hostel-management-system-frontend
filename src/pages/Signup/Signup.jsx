@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import { useState } from 'react';
 
 function Ignup() {
-    const [signUp, setSignUp] = useState(false);
+    const [signUp, setSignUp] = useState(true);
 
     const [details, setDetails] = useState({
         uname: '',
@@ -26,14 +26,14 @@ function Ignup() {
         if (input.uname === '' || input.pwd === '' || input.fname === '' || input.email === '' || input.options === '' || input.check === '') {
             alert('Input Field is empty')
         } else {
-
+            setSignUp(signUp)
         }
         e.preventDefault();
     }
     return (
         <div className={styles.p} >
             <FormHeader title="Sign Up" />
-            <form className='mt-5' onSubmit={handleSubmit}>
+            <form action='https://test-hms.herokuapp.com/api/auth/register/student' className='mt-5' onSubmit={handleSubmit}>
                 <div className='mb-3'>
                     <label htmlFor="uname" className='form-label'>Username</label>
                     <input type="text" name="uname" id="uname" className='form-control rounded-5 w-75 name ' onChange={handleChange} />
@@ -63,7 +63,7 @@ function Ignup() {
                     <label htmlFor="check" className='form-check-label'>I agree to the <a href="#" className='text-decoration-none link-info'>Terms & Conditions</a></label>
                 </div>
                 <div div className='d-grid' >
-                    <button type="button" onClick={() => { setSignUp(!signUp) }} className='my-4 btn btn-info btn-block w-75 rounded-5'>Sign Up</button>
+                    <button type="button" className='my-4 btn btn-info btn-block w-75 rounded-5'>Sign Up</button>
                 </div>
             </form>
 
