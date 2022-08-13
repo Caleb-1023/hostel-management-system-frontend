@@ -5,8 +5,8 @@ const Sidebar = () => {
     const navigate = useNavigate()
 
   return (
-    <div className='position-fixed p-4 bg-dark' style={{minHeight: '100vh'}}>
-        <i className='text-white fs-1 mx-3 mb-4 bx bxs-graduation' ></i>
+    <div className='position-fixed p-4 bg-dark' style={{minHeight: '100vh', zIndex: '20'}}>
+        <i class='text-white fs-1 mx-3 mb-4 bx bxs-graduation' ></i>
         <ul className='ps-2 mt-4'>
             <li className='mb-4'>
                 <Link className='text-white fs-5' to='/dashboard'><i className='mx-2 fs-3 bx bxs-dashboard'></i> Dashboard</Link>
