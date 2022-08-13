@@ -11,6 +11,7 @@ import Signup from "./pages/Signup";
 function App() {
   return (
     <>
+
       {/* <Sidebar /> */}
       <Routes>
         <Route index path='/' element={<Login />} />
