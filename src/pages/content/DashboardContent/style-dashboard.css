@@ -66,8 +66,9 @@ table>.push{
     justify-content: space-evenly;
     gap:1em;
 }
-.on-tag{
-    background:#ac56ac;
+.on-tag{background:#ac56ac;} .off-tag{background:#e7dbdb;}
+
+.on-tag, .off-tag{
     border-radius: 5px;
     text-align: center;
     justify-content: center;
@@ -75,14 +76,5 @@ table>.push{
     height: 30px;
     margin: 3px;
     padding:1px 0;
-}
-.off-tag{
-    background:#e7dbdb;
-    border-radius: 5px;
-    text-align: center;
-    justify-content: center;
-    width: 30px;
-    height: 30px;
-    margin: 3px;
-    padding:1px 0;
+    cursor: pointer;
 }
