@@ -16,7 +16,7 @@ return (
               <p>22ABD004</p>
               </div>
               <div className="col-3">
-               <img src='' alt='user'></img>
+               <img src='./images/test.jpg' style={{height:'5em' ,width:'5em'}} alt='user'></img>
               </div>
               <div className="col end">
               <p>10:00 am 1st August 2022</p>
@@ -32,7 +32,7 @@ return (
         <div className='section'>
                     <div className=" row align-items-end col l-tab" style={{margin:'1em'}}>
                       <h4 className='col px-4'>Current Room</h4>
-                      <span className="img-fluid rounded float-start"><img className="rounded float-start p-4" src="" alt="hall" style={{height:'5em' ,width:'5em'}}></img></span>
+                      <span className="img-fluid rounded float-start"><img className="rounded float-start p-4" src="./images/test.JPG" alt="hall" style={{height:'5em' ,width:'5em'}}></img></span>
                      <div className='g-2'>                     
                       <p><strong>Hall:</strong>Mandela</p>
                       <p><strong>Wing:</strong>A Wing</p>

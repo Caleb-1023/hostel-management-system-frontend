@@ -14,7 +14,7 @@ const Header = ({title}) => {
 								{title}
 							</div>
 							<div className="dashboard_bar text-white fs-4 fw-bold">
-								<img src="" alt="profile" />
+								<img src="../images/test.JPG" alt="" />
 							</div>
 						</div>
 					</div>
