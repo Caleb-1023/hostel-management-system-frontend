@@ -14,11 +14,7 @@ const Header = ({title}) => {
 								{title}
 							</div>
 							<div className="dashboard_bar text-white fs-4 fw-bold">
-<<<<<<< HEAD
 								<img src="./images/test.JPG" style={{width: '50px', borderRadius: '10rem'}} alt="" />
-=======
-								<img src="../images/test.JPG" alt="" />
->>>>>>> 924624b550289167c5b8ff729c707edf494f192e
 							</div>
 						</div>
 					</div>
