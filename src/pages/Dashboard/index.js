@@ -1,14 +1,19 @@
 import React from 'react'
-import Header from '../../components/Header'
-import Sidebar from '../../components/Sidebar'
-import DashboardContent from '../content/DashboardContent'
+import Header from '../../components/Header';
+import Sidebar from '../../components/Sidebar';
+// import Officer from '../content/DashboardContent/Officer';
+//import StudentDashboard from '../content/DashboardContent/Student.js';
+import DashboardContent from '../content/DashboardContent';
 
 const Dashboard = () => {
   return (
     <div>
         <Sidebar />
         <Header title='Dashboard'/>
-        <DashboardContent />
+        {/* <Officer/> */}
+        {/* <StudentDashboard/> */}
+        <DashboardContent/>
+
     </div>
   )
 }

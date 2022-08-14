@@ -1,11 +1,12 @@
-import React from 'react'
+import React from "react";
+// import StudentDashboard from "./Student";
+import Officer from "./Officer";
 
-const DashboardContent = () => {
-  return (
-    <div className='container-fluid' style={{paddingLeft: '250px'}}>
-        
-    </div>
-  )
+const DashboardContent= ()=>{
+    return(
+    <>
+    <Officer/>
+    {/* <StudentDashboard/> */}
+    </>);
 }
-
-export default DashboardContent
+export default DashboardContent;
