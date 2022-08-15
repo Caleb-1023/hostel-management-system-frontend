@@ -1,27 +1,17 @@
-import React from 'react'
+import React from "react";
+import StudentDashboard from "./StudentDashboard";
+import OfficerDashboard from "./OfficerDashboard";
+import { Routes, Route } from 'react-router-dom';
 
-const DashboardContent = () => {
-  return (
-    <div className='container-fluid' style={{paddingLeft: '250px'}}>
-        <div className="DashboardContent">
-            <div className="Greetings">
-              <h1>Good Morning</h1>
-              <img src="" alt="userimage"/>
-              <p>College of Technology</p>
-              <p>Cyber Security</p>
-              <p>500 Level</p>
-            </div>
-            <div className="first">
-              <span className="image"></span>
-              <p>Hall:</p>
-              <p>Room number:</p>
-            </div>
-            <div className="second">
-              <h1>Registered Devices</h1>
-            </div>
-        </div>
-    </div>
-  )
+const DashboardContent= ()=>{
+    return(
+    <>
+    {/* <OfficerDashboard /> */}
+    <Routes>
+        <Route path="/" element={<StudentDashboard/>} />
+        <Route path="/room-selection" element={<OfficerDashboard/>} />
+    </Routes>
+    
+    </>);
 }
-
-export default DashboardContent
+export default DashboardContent;

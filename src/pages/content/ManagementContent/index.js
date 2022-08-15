@@ -1,9 +1,12 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 
 const ManagementContent = () => {
   const notifications = [
     'You have 4 unread reports', 'You have 2 new requests', 'Weekly attendance report due tomorrow', 'Six new items added to inventory'
   ]
+
+  const navigate = useNavigate()
 
   return (
     <div className='container-fluid' style={{paddingLeft: '250px'}}>
@@ -24,7 +27,12 @@ const ManagementContent = () => {
             <li className='my-3 fw-semibold fs-5' style={{listStyle: 'none'}}>Students on Campus: 300</li>
           </ul>
           <div className='my-3'>
-            <button className='btn btn-primary rounded-5 mx-auto px-4'>View Student Database</button>
+            <button 
+            className='btn btn-primary rounded-5 mx-auto px-4' 
+            // onClick={() => navigate('/management/student-database')}
+            >
+              View Student Database
+            </button>
           </div>
         </div>
         <div className="card col-5 m-4 p-5 rounded-5">
