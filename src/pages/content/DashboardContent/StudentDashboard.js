@@ -62,7 +62,7 @@ const StudentDashboard = () => {
               </div>
             </div>                    
             <div className='text-center'>
-              <button className='button p-2'>Select Room</button>
+              <button className='button p-2' onClick={() => navigate('/dashboard/hall-selection')}>Select Room</button>
             </div>                 
           </div>
           {/* Registered Devices */}
@@ -95,7 +95,7 @@ const StudentDashboard = () => {
               </ul>
             </div>
             <div className='text-center'>
-              <button className='button p-2' onClick={() => navigate('/dashboard/room-selection')}>Add device</button>
+              <button className='button p-2'>Add device</button>
             </div>
           </div>
         </div>
