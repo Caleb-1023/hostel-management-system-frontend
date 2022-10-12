@@ -7,8 +7,8 @@ import axios from 'axios'
 // Validation
 // const USER_REGEX = /^[a-zA-Z][a-zA-Z0-9-_]{3,23}$/
 // const PWD_REGEX = /^(?.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%]).{8,24}$/
-const REGISTER_URL = 'https://test-hms.herokuapp.com/api/auth/register/student'
-const TEST_URL = 'https://reqres.in//api/register'
+// const REGISTER_URL = 'https://test-hms.herokuapp.com/api/auth/register/student'
+// const TEST_URL = 'https://reqres.in//api/register'
 
 const SignUp = () => {
   const navigate = useNavigate()
@@ -19,22 +19,22 @@ const SignUp = () => {
   const errRef = useRef()
 
   // input field states
-  const [user, setUser] = useState('18cj024178')
+  const [user, setUser] = useState('')
   const [validName, setValidName] = useState(true)
   const [userFocus, setUserFocus] = useState(false)
 
-  const [email, setEmail] = useState('asdfghjk@gmail.com')
+  const [email, setEmail] = useState('')
   const [validEmail, setValidEmail] = useState(true)
   const [emailFocus, setEmailFocus] = useState(false)
 
-  const [pwd, setPwd] = useState('123456789')
+  const [pwd, setPwd] = useState('')
   const [validPwd, setValidPwd] = useState(true)
   const [pwdFocus, setPwdFocus] = useState(false)
 
-  const [name, setName] = useState('Okpaheifufue Caleb')
+  const [name, setName] = useState('')
   // const [pwdFocus, setPwdFocus] = useState(false)
 
-  const [gender, setGender] = useState('male')
+  const [gender, setGender] = useState('')
   // const [pwdFocus, setPwdFocus] = useState(false)
 
   const [matchPwd, setMatchPwd] = useState('')
@@ -46,9 +46,9 @@ const SignUp = () => {
   const [success, setSuccess] = useState(false)
 
   // set focus on-load
-  useEffect(() => {
+  // useEffect(() => {
     // userRef.current.focus()
-  }, [])
+  // }, [])
 
   // validate username
   // useEffect(() => {
@@ -80,22 +80,22 @@ const SignUp = () => {
 // console.log(err)
 // }
 //  }
- const register = async () => {
-  try{
-    const response = await axios.post("https://test-hms.herokuapp.com/api/auth/register/student",JSON.stringify({email: "asdfvcxzu@gmail.com",
-   userName: "18CJ021699",
-   password: "1801670cu",
-   name: "Okpaheifufue Caleb",
-   gender: "male"}))
-console.log(response)}
-catch(err){
-console.log(err)
-}
- }
+//  const register = async () => {
+//   try{
+//     const response = await axios.post("https://test-hms.herokuapp.com/api/auth/register/student",{"email": "zxcvbnm@gmail.com",
+//    "userName": "18CJ021643",
+//    "password": "1801670cu",
+//    "name": "zxcv zxcvb",
+//    "gender": "male"})
+// console.log(response)}
+// catch(err){
+// console.log(err)
+// }
+//  }
 
   useEffect( () => {
     setErrMsg('')
-    register()
+    // register()
     },
   //   axios.post("https://test-hms.herokuapp.com/api/auth/register/student", JSON.stringify({ 
   //     // "email": email,
@@ -119,57 +119,57 @@ console.log(err)
     // user, pwd, matchPwd
   ])
 
-  // const handleSubmit = async (e) => {
-  //   e.preventDefault()
-  //   // if button enabled with JS hack
-  //   // const v1 = USER_REGEX.test(user)
-  //   // const v2 = PWD_REGEX.test(pwd)
-  //   // if (!v1 || !v2) {
-  //   //   setErrMsg('Invalid Entry')
-  //   //   return
-  //   // }
-  //   // console.log(user, pwd, email, name, gender)
-  //   // setSuccess(true)
-  //   console.log(email, user, pwd, name, gender)
-  //   try {
-  //     const response = await axios.post(
-  //       "https://reqres.in//api/register", 
-  //       { 
-  //           // // "email": email, 
-  //           // "email": "okaleb106@gmail.com", 
-  //           // // "userName": user, 
-  //           // "userName": "18CJ02146", 
-  //           // // "password": pwd, 
-  //           // "password": "1801670cu", 
-  //           // // "name": name, 
-  //           // "name": "Okpaheifufue Caleb", 
-  //           // // "gender": gender 
-  //           // "gender": "male" 
-  //           "email": "eve.holt@reqres.in",
-  //           "password": "pistol"
-  //         },
-  //     )
-  //     console.log(response.data)
-  //     console.log(response.accessToken)
-  //     console.log(JSON.stringify(response))
-  //     setSuccess(true)
-  //     setUser('')
-  //     setName('')
-  //     setPwd('')
-  //     setMatchPwd('')
-  //     setEmail('')
-  //     setGender('')
-  //   } catch (err) {
-  //     if (!err?.response) {
-  //       setErrMsg('No Server Response')
-  //     } else if (err.response?.status === 409) {
-  //       setErrMsg('Username Taken')
-  //     } else {
-  //       setErrMsg('Registration Failed')
-  //     }
-  //     errRef.current.focus()
-  //   }
-  // }
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    // if button enabled with JS hack
+    // const v1 = USER_REGEX.test(user)
+    // const v2 = PWD_REGEX.test(pwd)
+    // if (!v1 || !v2) {
+    //   setErrMsg('Invalid Entry')
+    //   return
+    // }
+    // console.log(user, pwd, email, name, gender)
+    // setSuccess(true)
+    console.log(email, user, pwd, name, gender)
+    try {
+      const response = await axios.post(
+        "https://test-hms.herokuapp.com/api/auth/register/student", 
+        { 
+            "email": email, 
+            // "email": "okaleb106@gmail.com", 
+            "userName": user, 
+            // "userName": "18CJ02146", 
+            "password": pwd, 
+            // "password": "1801670cu", 
+            "name": name, 
+            // "name": "Okpaheifufue Caleb", 
+            "gender": gender 
+            // "gender": "male" 
+            // "email": "eve.holt@reqres.in",
+            // "password": "pistol"
+          },
+      )
+      console.log(response.data)
+      console.log(response.accessToken)
+      console.log(JSON.stringify(response))
+      setSuccess(true)
+      setUser('')
+      setName('')
+      setPwd('')
+      setMatchPwd('')
+      setEmail('')
+      setGender('')
+    } catch (err) {
+      if (!err?.response) {
+        setErrMsg('No Server Response')
+      } else if (err.response?.status === 409) {
+        setErrMsg('Username Taken')
+      } else {
+        setErrMsg('Registration Failed')
+      }
+      errRef.current.focus()
+    }
+  }
 
   return (
     <>
@@ -188,7 +188,7 @@ console.log(err)
           <h3 className='fw-bold mb-3'>Sign Up</h3>
           <p ref={errRef} className={errMsg ? 'd-block' : 'd-none'} aria-live='assertive'>{errMsg}</p>
           <form 
-            // onSubmit={handleSubmit}
+            onSubmit={handleSubmit}
           >
             <div className='my-1 d-flex'>
               <div className="mb-2 me-2 w-50">

@@ -1,9 +1,13 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
+import useUser from '../../../hooks/useUser';
 import { useNavigate } from 'react-router-dom';
 import './style-dashboard.css';
 
 const StudentDashboard = () => {
+  const { user } = useUser()
   const navigate = useNavigate()
+  const [currUser, setCurrUser] = useState({})
+  const [caleb, setCaleb] = useState('')
 
   const date = new Date()
   let greeting = () => {
@@ -16,6 +20,11 @@ const StudentDashboard = () => {
     }
   }
 
+  useEffect(() => {
+    // setUser(JSON.parse(localStorage.getItem('user')))
+    // console.log(user)
+  }, [caleb])
+
   
   
   return (
@@ -24,12 +33,12 @@ const StudentDashboard = () => {
         <div className="profile mt-3">
           <div className='container py-3 px-5'>
             <div className='d-flex flex-row'>
-                <div class="col-4">
+                <div className="col-4">
                   <h1>{greeting()}<span style={{color:'yellow'}}> ☀</span></h1>
                   <br></br>
-                  <p className='h2'>GBENGA, Lagbaja</p>
-                  <p>Lagbaja@stu.edu.org</p>
-                  <p>22ABD004</p>
+                  <p className='h2'>{user?.name}</p>
+                  <p>{user?.email}</p>
+                  <p>{user?.matricNo}</p>
                 </div>
                 <div className="col-4">
                   <img src='./images/test.jpg' className='my-2' style={{width:'45%', borderRadius: '6rem'}} alt='user'></img>
@@ -48,7 +57,7 @@ const StudentDashboard = () => {
           {/* Current Room */}
           <div className='d-flex flex-column col-4 rounded-5 p-3' style={{margin:'1em', background: '#d9bfdf'}}>
             <h4 className='px-3'>Current Room</h4>
-            <div class="col-12 text-center">
+            <div className="col-12 text-center">
               <img className="rounded  mb-2" src="./images/test.JPG" alt="hall" style={{width:'90%', height: '10rem'}}/>
             </div>
             <div className='mx-4 mt-3'>      
