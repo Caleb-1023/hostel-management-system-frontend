@@ -1,18 +1,16 @@
 import React, { useState } from 'react'
 import useUser from '../../hooks/useUser'
 import { useNavigate } from 'react-router-dom'
-// import useAuth from '../../hooks/useAuth'
 import axios from 'axios'
 
 const Login = () => {
-  const { user, setUser } = useUser()
+  const { setUser } = useUser()
   const navigate = useNavigate()
   const [currUser, setCurrUser] = useState('')
   const [pwd, setPwd] = useState('')
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    // console.log(user, pwd)
     try {
       const response = await axios.post(
         "https://test-hms.herokuapp.com/api/auth/signin",
@@ -21,7 +19,6 @@ const Login = () => {
           "password": pwd
         }
       )
-      // console.log(response)
       if(response.data){
         const dashboardData = {
           token: response.data.accessToken,
@@ -33,7 +30,6 @@ const Login = () => {
         sessionStorage.setItem('user', JSON.stringify(dashboardData))
         setUser(JSON.parse(sessionStorage.getItem('user')))
         navigate('/dashboard')
-        // console.log(user)
       }
     } catch (err) {
       console.log("Error")
@@ -74,7 +70,6 @@ const Login = () => {
             </div>
             <div>
               <input type="submit" className='btn btn-dark w-75 rounded-4 border-0 my-3 py-2' value="Login" 
-              // onClick={() => navigate('/dashboard')}
                />
             </div>
           </form>
@@ -87,14 +82,10 @@ const Login = () => {
       </div>
       <div className="container w-50 bg-dark" style={{ height: '100vh' }}></div>
     </div>
-    // <div className='container'>
-    //     <button onClick={() => navigate('/signup')}>Sign up</button>
-    //     <button onClick={() => navigate('/dashboard')}>Log in</button>
     // { 
     //   "usernameOrEmail": "ibukunod@yahoo.com",
     //   "password": "1801486cu"
     // }
-    // </div>
   )
 }
 
