@@ -1,12 +1,9 @@
-import React, { useEffect } from 'react'
-// import useUser from '../../../hooks/useUser'
+import React, { useEffect, useState } from 'react'
 import { useNavigate } from 'react-router-dom'
 import axios from 'axios'
-import { useState } from 'react'
 
 const HallSelection = () => {
     const navigate = useNavigate()
-    // const {user, setUser} = useUser()
     const bearer = JSON.parse(sessionStorage.getItem('user'))
     
     console.log(bearer.token)
@@ -15,7 +12,7 @@ const HallSelection = () => {
             const response = await axios.get(`https://test-hms.herokuapp.com/api/halls/${bearer.gender}/viewByGender`,
             {
                 headers: {
-                    Authorization: "Bearer " + bearer.token
+                    Authorization: `Bearer ${bearer.token}`
                 }
             })
             console.log(response)
@@ -30,21 +27,23 @@ const HallSelection = () => {
     const [isLoading, setIsLoading] = useState(true)
 
     useEffect(() => {
-        // setUser(JSON.parse(sessionStorage.getItem('user')))
-        // console.log(user)
         getHalls()
     }, [])
-
-    if (halls.length === 0 && isLoading) {
-        return <p>Loading...</p>
-    }
 
   return (
     <div className='container-fluid' style={{paddingLeft: '250px'}}>
         <div className="d-flex flex-row flex-wrap card m-3 p-4">
-            {halls?.map(hall => {
-                return <div className='card col-4 m-3 p-3 bg-dark text-white' key={hall.hallId} onClick={() => navigate('/dashboard/wing-selection')} style={{cursor: 'pointer'}}>{hall.hallName}</div>
-            })}
+            {
+                halls.length === 0 && isLoading ? (
+                    <p>Loading...</p>
+                ):(
+                    <>
+                        {halls?.map(hall => {
+                            return <div className='card col-4 m-3 p-3 bg-dark text-white' key={hall.hallId} onClick={() => navigate("/dashboard/wing-selection")} style={{cursor: 'pointer'}}>{hall.hallName}</div>
+                        })}
+                    </>
+                )
+            }
         </div>
     </div>
   )
